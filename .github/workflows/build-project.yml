@@ -25,12 +25,12 @@ jobs:
 
       - name: Build Python Executable
         run: |
-          pyinstaller Update.spec
+          pyinstaller Installer.spec
 
       - name: Upload Executable as Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: Project-Editor
+          name: Installer
           path: |
             dist/Installer
 
