@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: '3.13'
           cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: pip install pyinstaller
 
       - name: Get current year and month
         id: get_date
